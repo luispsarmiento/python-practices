@@ -35,9 +35,9 @@ def webhook():
         )
 
         # Send a reply message
-        reply_url = f"https://graph.facebook.com/v18.0/{business_phone_number_id}/messages"
+        reply_url = f"https://graph.facebook.com/v22.0/{business_phone_number_id}/messages"
         headers = {"Authorization": f"Bearer {GRAPH_API_TOKEN}"}
-
+        
         # Reply to the message
         reply_data = {
             "messaging_product": "whatsapp",
